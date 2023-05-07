@@ -73,7 +73,7 @@ namespace MixMod
         {
             _config = config;
 #if DEBUG
-            devEnabledEntry = config.Bind("Dev", "DevEnabled", false, "Режим разработчика мода");
+            devEnabledEntry = config.Bind("Dev", "DevEnabled", true, "Режим разработчика мода");
             isInternalEntry = config.Bind("Dev", "IsInternal", false, "Режим разработчика игры");
             boardEntry = config.Bind("Dev", "Board", 0, "Номер игрового поля для замены");
             goldenCoinEntry = config.Bind("Dev", "GoldenCoin", CardState.Default, "Изменения для монеток");
